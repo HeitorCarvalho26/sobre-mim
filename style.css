@@ -1,8 +1,70 @@
-body{
+body {
     font-family: Georgia, 'Times New Roamn' Times, serif;
+    background-color: orange;
 }
 
-h1{
-    
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
 
-}  
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+header {
+    background-color:   orange;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, .7);
+    position: sticky;
+    /* pode ser necessario top ou left */
+    top: 0;
+}
+
+
+
+header ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav a {
+    color: #fff;
+    font-weight: 700;
+    padding: .5rem 1rem;
+}
+
+header a:hover {
+    background-color: orangered;
+
+}
+
+section {
+    height: fit-content;
+    margin: 2vh;
+    scroll-margin-top: 4rem;
+    padding: 1rem;
+    border: 5px solid #000;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    
+}
+
+footer{
+    border: 5px #000;
+    background-color: orange;
+}
+
+form input{
+    border: 3px solid black;
+
+}
+form textarea{
+    border: 3px solid black;
+}
+form button{
+    border: 3px solid black;
+}

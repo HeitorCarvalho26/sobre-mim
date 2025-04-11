@@ -1,110 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    <head>
+        <!-- Meta informações sobre a página -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sobre mim</title>
 
-<head>
-    <!-- Meta informações sobre a pagina -->
-    <meta charset="uft-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mim</title>
+        <!-- CSS Reset -->
+        <link rel="stylesheet" href="reset.css">
+        
+        <!-- CSS externo (arquivo style) -->
+        <link rel="stylesheet" href="style.css">
+        
+        <!-- CSS interno (tag style) -->
+        <style>
+            /* body {
+                background-color: #00ff00;
+            } */
+        </style>
+    </head>
+    <body>
+        
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#sobreMim">Sobre mim</a></li>
+                    <li><a href="#formacaoAcademica">Formação</a></li>
+                    <li><a href="#hardSkills">Hard skills</a></li>
+                    <li><a href="#softSkills">Soft skills</a></li>
+                    <li><a href="#meusProjetos">Projetos</a></li>
+                    <li><a href="#meusArtigos">Artigos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <link rel="stylesheet" href="reset.css">
+        <section id="sobreMim">
+            <h1>Sobre mim</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus ad nulla, veritatis obcaecati rerum eveniet reiciendis, blanditiis assumenda voluptatibus odio modi. Explicabo maxime provident aperiam placeat, ullam quibusdam corporis pariatur incidunt inventore recusandae blanditiis, sed numquam modi eveniet aliquam molestias nostrum! Deserunt soluta blanditiis earum est recusandae accusamus quidem necessitatibus officiis hic atque ex maiores, provident quisquam. Beatae, commodi dolorum.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus consequatur dolor nemo, magnam corrupti cupiditate quo, quibusdam ab est exercitationem autem beatae ipsam cumque ipsum itaque veritatis eveniet optio perspiciatis officia, dolores vitae incidunt expedita totam? Minus recusandae sint veritatis ab, eaque placeat consequatur id aliquam, reiciendis hic atque ipsa!</p>
+            <img src="foto_perfil.jpg" alt="Foto de um homem branco usando oculos e dando um joia ." width="200" title="Foto de um homem branco de barba preta com pintinhas no rosto, sorrindo.">
+            
+            <!-- section>(h2>{Nova seção})+p*2>lorem20 -->
 
-    <link rel="stylesheet" href="style.css">
+            <!-- header>nav.navbar>ul.lista>li*10>a>{link$} -->
 
+            <ul>
+                <li>
+                    <a href="https://github.com/HeitorCarvalho26" title="Clique para acessar meu portfólio no GitHub" target="_blank">Acesse o meu GitHub</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/heitor-carvalho-miguel/" target="_blank">Acesse o meu LinkedIn</a>
+                </li>
+            </ul>
+        </section>
 
-    <style>
+        <section id="formacaoAcademica">
+            <h2>Formação acadêmica</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur enim adipisci incidunt necessitatibus quisquam, ipsam facere saepe nemo unde ad!</p>
+            
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, nesciunt.</li>
+                <li>Libero nostrum repudiandae veniam officiis soluta quaerat repellendus ratione voluptates?</li>
+                <li>Nisi molestias natus assumenda tempore odio quod temporibus necessitatibus illum.</li>
+            </ul>
+        </section>
 
+        <section id="hardSkills">
+            <h2>Hard skills</h2>
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Voluptatum quo deleniti iste eaque?</li>
+                <li>Tempora sed quia rerum eius.</li>
+                <li>Accusamus libero doloribus ducimus. Adipisci.</li>
+                <li>Labore blanditiis iusto libero minus!</li>
+                <li>Velit sequi quasi labore animi.</li>
+                <li>Voluptate cumque ut modi ad.</li>
+            </ul>
+        </section>
 
-    </style>
-</head>
+        <section id="softSkills">
+            <h2>Soft skills</h2>
+            <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Saepe, quos tempora!</li>
+                <li>Iure, maiores similique.</li>
+                <li>Eaque, nam facere.</li>
+                <li>Dolore, optio velit!</li>
+                <li>Non, voluptas itaque?</li>
+            </ul>
+        </section>
 
-<section>
-    <ul>
-        <li><a href="#sobreMim">Sobre mim</a></li>
-        <li><a href="#formacaoAcademica">Formacao Academica</a></li>
-        <li><a href="#hardSkills">Hard skills</a></li>
-        <li><a href="#softSkills">Soft skills</a></li>
-        <li><a href="#meusProjetos">Meus projetos</a></li>
-        <li><a href="#meusArtigos">Meus artigos</a></li>
-        <li><a href="#rodape">Última seção</a></li>
-    </ul>
-</section>
+        <section id="meusProjetos">
+            <h2>Meus projetos</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis aspernatur voluptatem dolore fugit ipsam dolorem corrupti impedit consequatur incidunt a.</p>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse et saepe sunt adipisci vitae quo.</li>
+                <li>Ratione aliquam aspernatur, dolore porro similique eos, nihil amet rerum blanditiis provident itaque modi dolorum!</li>
+                <li>Ipsam praesentium neque omnis error voluptatibus natus rerum, consequatur vitae illo, quisquam vel ullam nobis.</li>
+                <li>Non optio reprehenderit error totam earum, amet id dolorem, assumenda repudiandae ad rerum nam iure!</li>
+                <li>Qui, numquam suscipit magnam beatae, consectetur officiis obcaecati exercitationem quisquam aspernatur quo laudantium, debitis necessitatibus.</li>
+                <li>Mollitia tenetur quis debitis corrupti officia dolor eligendi. Natus dicta reprehenderit sequi deserunt! Quis, minus?</li>
+                <li>Animi hic voluptatum aliquam quam enim. Repudiandae vitae ea consequatur iure facere assumenda ducimus. Alias?</li>
+            </ul>
+        </section>
 
-<section id="sobreMim">
-    <h1>Sobre Mim</h1>
-    <p>Faço curso profisionazante no SENAI São Paulo. Tenho 16 anos gosto de musica e jogos.</p>
-    <img src="foto_perfil.jpg" alt="Foto com um homem fazendo joinha e sorrindo" width="200"
-        title="Foto com um homem fazendo joinha e sorrindo">
-</section>
+        <section id="meusArtigos">
+            <h2>Meus artigos</h2>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nesciunt at ea voluptatibus ad odio sed voluptates, labore inventore quod fugiat eos iure reiciendis itaque odit nemo soluta totam minima?</li>
+                <li>Velit molestiae dolorem ea ducimus delectus voluptatem maiores aut, non ad autem magnam nam beatae dolor odio natus dignissimos, sequi commodi consequuntur reiciendis saepe, ratione distinctio vero. Eveniet, quo provident.</li>
+                <li>Deleniti et id voluptatem repudiandae officiis quae necessitatibus tempore non dolorem ad est impedit maxime repellendus eos eligendi qui aut, commodi natus sint illum soluta possimus cum inventore consequatur! Totam.</li>
+            </ul>
+        </section>
 
-<section id="formacaoAcademica">
-    <h2>Formação acadêmica</h2>
-    <ul>
-        <li>Ensino fundamental completo</li>
-        <li>Ensino medio em andamento<br></li>
-        <li>Ensino tecnico em andamento</li>
-    </ul>
-</section>
+        <section id="contato">
+            <h2>Entre em contato comigo</h2>
+            <form>
+                <input type="text" name="nome">
+                <input type="email" name="email">
+                <textarea name="mensagem" rows="5" cols="50"></textarea>
+                <!-- <input type="submit" name="botaoEnviar" value="Solicitar contato"> -->
+                <button type="submit" name="botaoEnviar">Solicitar contato</button>
+            </form>
+        </section>
 
-<section id="hardSikills">
-    <h2>Hard skills</h2>
-    <ul>
-        <li>Ingles fluente</li>
-        <li>Java Script</li>
-        <li>HTML</li>
-        <li>css</li>
-        <li>Power Shell</li>
-    </ul>
+        <footer id="rodape">
+            <ul>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>YouTube</li>
+            </ul>
+            <address>São Paulo, SP - Brasil</address>
+            <p>Desenvolvido por Heitor de Carvalho Miguel</p>
+        </footer>
 
-</section>
-
-<section id="softSkills">
-    <h2>Soft skills</h2>
-    <ul>
-        <li>Dedicado</li>
-        <li>Paciente</li>
-        <li>Prestativo</li>
-        <li>Inteligente</li>
-    </ul>
-</section>
-
-<section id="meusProjtos">
-    <h2>Meus projetos</h2>
-    <a href="https://heitorcarvalho26.github.io/lopal-moonlander/" title="Clique para acessar meu portfólio no Github"
-        target="_blank">Jogo de alunisagem</a>
-
-</section>
-
-<section id="meusArtigos">
-    <h2>Meus artigos</h2>
-</section>
-
-<section id="contato">
-    <form>
-        <input type="text" name="nome">
-        <input type="text" name="email">
-        <textarea name="mensagem" rows="">
-            <input type="submit" name="botaoEnviar">
-        </form>
-    </section>
-
-    <section id="rodape">
-        <p>Links úteis</p>
-        <ul>
-            <li>
-                <a href="https://github.com/HeitorCarvalho26" title="Clique para acessar meu portfólio no Github"
-                    target="_blank">Github</a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/heitor-carvalho-miguel/" title="Cliqye para acessar meu Linkedin"
-                    target="_blank">linkedin</a>
-            </li>
-        </ul>
-        <p>Copyrigth</p>
-        © Copyright 2025- Todos os diretos reservados, Heitor de Carvalho Miguel.
-    </section>
-    
-
-</body>
-
+    </body>
 </html>
