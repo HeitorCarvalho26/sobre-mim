@@ -1,9 +1,13 @@
-body {
-    font-family: Georgia, 'Times New Roamn' Times, serif;
-    background-color: blue;
-    color: #fff;
-}
 
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #26269f;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+    
+/* Títulos */
 h1 {
     font-size: 2em;
     font-weight: bold;
@@ -14,86 +18,139 @@ h2 {
     font-weight: 700;
 }
 
+/* Cabeçalho */
 header {
-    background-color:   rgb(0, 0, 0);
+    background-color: #000;
     padding: 1rem 2rem;
-    box-shadow: 0 4px 8px rgb(0, 0, 0, .7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
     position: sticky;
-    /* pode ser necessario top ou left */
     top: 0;
+    z-index: 10;
 }
-
-
 
 header ul {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav a {
     color: #fff;
     font-weight: 700;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
-header a:hover {
-    background-color: blue;
-
+nav a:hover {
+    background-color: #26269f;
+    border-radius: 8px;
 }
 
+/* Seções */
 section {
-    height: fit-content;
-    margin: 2vh;
-    scroll-margin-top: 4rem;
+    margin: 2vh 1rem 15px;
     padding: 1rem;
-    border: 5px solid #000;
-    border-radius: 15px;
-    margin-bottom: 15px;
-    background-color: rgb(94, 94, 94);
-    
+    background-color: #fff;
+    border: none;
+    scroll-margin-top: 5rem;
 }
 
-footer{
-    border: 5px #000;
-    background-color: blue;
+/* Rodapé */
+footer {
+    border-top: 5px solid #000;
+    background-color: #0000ff;
+    color: #fff;
+    padding: 1rem;
+}
+footer ul :hover{
+    background-color: #26269f;
+    border-radius: 8px;
 }
 
-form input{
-    border: 3px solid black;
-
-}
-form textarea{
-    border: 3px solid black;
-}
-form button{
-    border: 3px solid black;
-}
-
+/* Formulários */
 form {
     display: flex;
-    align-items: flex-start;
-    gap: 20px;
     flex-wrap: wrap;
-  }
+    gap: 20px;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
 
-  .campo-container {
+form input,
+form textarea,
+form button {
+    border: 3px solid #000;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.campo-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
+    align-items: flex-start;
+}
 
-  .mensagem {
+.mensagem {
     width: 300px;
-    height: 40px;
+    height: 100px;
     resize: none;
-  }
+}
 
-  button {
+/* Botão */
+button {
     height: 40px;
     padding: 0 15px;
-    font-size: 16px;
-    border: 1px solid #000;
+    font-size: 1rem;
+    border: 1px solid #3a3aff;
+    background-color: #fff;
+    color: #000;
     cursor: pointer;
-  }
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
+button:hover {
+    background-color: #2b2bb8;
+    color: #fff;
+}
+
+.card{
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    list-style: none;
+}
+ 
+ 
+.titulo-card{
+    font-weight: 700;
+    color: #177ce9;
+    font-size: 1.3rem;
+}
+ 
+.instituicao-card{
+    font-size: 1.1rem;
+    color: #555;
+}
+ 
+.cards-em-colunas{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+titulo-secao{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cards-em-linha {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
